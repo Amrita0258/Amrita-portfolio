@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amrita Gochhayat| Portfolio</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Feather Icons -->
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight text-white hover:text-blue-400 transition-colors">
+        Amrita<span class="text-blue-500">.</span>
+      </a>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+        <a href="#contact" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+        <i data-feather="menu"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-b border-slate-700 px-6 py-4 space-y-3">
+      <a href="#about" class="block text-slate-300 hover:text-blue-400">About</a>
+      <a href="#skills" class="block text-slate-300 hover:text-blue-400">Skills</a>
+      <a href="#projects" class="block text-slate-300 hover:text-blue-400">Projects</a>
+      <a href="#contact" class="block text-blue-400 font-semibold">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="min-h-screen flex items-center pt-20 px-6 max-w-6xl mx-auto">
+    <div class="space-y-6 max-w-3xl">
+      <div class="inline-block px-3 py-1 bg-blue-500/10 border border-blue-500/20 rounded-full text-blue-400 text-sm font-medium">
+        Computer Science & Software Development
+      </div>
+      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
+        Code. Create. Innovate. Repeat
+      </h1>
+      <p class="text-lg md:text-xl text-slate-400 leading-relaxed">
+        Hi, I'm <span class="text-slate-100 font-semibold">Amrita Gochhayat</span>. I specialize in full-stack development, data analytics, and building robust software applications.
+      </p>
+      <div class="flex flex-wrap gap-4 pt-2">
+        <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-lg shadow-lg shadow-blue-500/20 transition-all">
+          View Projects
+        </a>
+        <a href="#contact" class="px-6 py-3 border border-slate-700 hover:border-slate-500 text-slate-300 font-medium rounded-lg transition-all">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-24 bg-slate-800/50 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-white mb-8">About Me</h2>
+      <div class="grid md:grid-cols-2 gap-12 text-slate-300 leading-relaxed">
+        <p>
+          I am a Computer Science student with a strong foundation in backend architecture, web application development, and data visualization. I focus on creating intuitive user experiences coupled with efficient backend logic.
+        </p>
+        <p>
+          Whether analyzing datasets for strategic insights or structuring distributed system logic, I prioritize clean code, scalability, and measurable real-world outcomes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-24 max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-white mb-12">Technical Expertise</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
+        <div class="text-blue-400 mb-4"><i data-feather="code"></i></div>
+        <h3 class="text-xl font-bold text-white mb-2">Languages</h3>
+        <p class="text-slate-400 text-sm">Python, Java, JavaScript, SQL, HTML5, CSS3</p>
+      </div>
+
+      <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
+        <div class="text-blue-400 mb-4"><i data-feather="layers"></i></div>
+        <h3 class="text-xl font-bold text-white mb-2">Frontend & Web</h3>
+        <p class="text-slate-400 text-sm">React, Redux, Tailwind CSS, Responsive Design</p>
+      </div>
+
+      <div class="p-6 bg-slate-800/40 border border-slate-800 rounded-xl">
+        <div class="text-blue-400 mb-4"><i data-feather="bar-chart-2"></i></div>
+        <h3 class="text-xl font-bold text-white mb-2">Data & AI/ML</h3>
+        <p class="text-slate-400 text-sm">DBMS,Power BI, Data Analytics, Applied Machine Learning</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 bg-slate-800/50 border-y border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-white mb-12">Featured Projects</h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        
+        <!-- Project 1 -->
+        <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Full Stack & Systems</span>
+            <h3 class="text-2xl font-bold text-white mt-2 mb-3">Text-to-Image</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Text-to-Image Generation using Diffusion Models — An AI-powered system that transforms natural-language prompts into generated images using deep learning and diffusion techniques.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Python</span>
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Diffusers</span>
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">JavaScrept</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Business Intelligence</span>
+            <h3 class="text-2xl font-bold text-white mt-2 mb-3">Aadhaar Enrolment & Update Analytics</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Interactive Power BI analytics dashboard tracking demographic enrollment trends, regional update velocities, and operational bottlenecks.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Power BI</span>
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Data Analytics</span>
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Visualization</span>
+          </div>
+        </div>
+      <!-- Project 3 -->
+        <div class="p-8 bg-slate-900 border border-slate-800 rounded-xl flex flex-col justify-between">
+          <div>
+            <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Full Stack </span>
+            <h3 class="text-2xl font-bold text-white mt-2 mb-3">Face Detection</h3>
+            <p class="text-slate-400 text-sm leading-relaxed mb-6">
+              Face Detection using Computer Vision — A real-time face detection system that identifies and locates human faces in images and video using computer vision techniques.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Python</span>
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">OpenCV</span>
+            <span class="px-2.5 py-1 bg-slate-800 text-slate-300 text-xs rounded">Computer Vision</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-white mb-4">Let's Connect</h2>
+    <p class="text-slate-400 max-w-lg mx-auto mb-8">
+      I am open to engineering roles, collaborative projects, and technical discussions.
+    </p>
+    <div class="flex justify-center gap-6">
+      <a href="mailto:barshasethy@example.com" class="p-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-full transition-colors">
+        <i data-feather="mail"></i>
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="p-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-full transition-colors">
+        <i data-feather="linkedin"></i>
+      </a>
+      <a href="https://github.com" target="_blank" class="p-3 bg-slate-800 hover:bg-slate-700 text-slate-200 rounded-full transition-colors">
+        <i data-feather="github"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-slate-800 text-center text-sm text-slate-500">
+    © 2026 Amrita Gochhayat. All rights reserved.
+  </footer>
+
+  <script>
+    feather.replace();
+    
+    // Toggle Mobile Menu
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
